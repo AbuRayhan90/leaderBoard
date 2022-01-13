@@ -31,6 +31,7 @@ a {
 }
 /* Header Style  */
 .header_bg {
+  overflow: hidden;
   background-color: #562eff;
   width: 100%;
 }
@@ -46,7 +47,7 @@ a {
   display: flex;
   align-items: center;
 }
-.logo h1 {
+.logo sapn {
   size: 24px;
   color: #ffffff;
   margin-left: 15px;
@@ -168,4 +169,59 @@ a {
   color: #ed6b4f;
   font-size: 14px;
   line-height: 30px;
+}
+
+/* Media Query  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header_content {
+    width: 100%;
+    height: 60px;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  .profile_photo {
+    display: none;
+  }
+  .menu li {
+    padding: 5px 5px;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo span {
+    size: 15px;
+    color: #ffffff;
+    margin-left: 5px;
+  }
+
+  .container {
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .latests_course {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .single_course {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
